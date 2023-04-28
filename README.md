@@ -26,8 +26,8 @@ We assume the following about the data:
 
 |         | Histogram | Fitted mixture model |
 |---------|-----------|----------------------|
-|2 strains| ![alt text](https://github.com/biointec/haplodetox/example/spectra/2strains_histogram.png) | ![alt text](https://github.com/biointec/haplodetox/example/spectra/2strains_modelfit.png) |
-|3 strains| ![alt text](https://github.com/biointec/haplodetox/example/spectra/3strains_spectrum.png) | ![alt text](https://github.com/biointec/haplodetox/example/spectra/3strains_modelfit.png) |
+|2 strains| ![alt text](https://github.com/biointec/haplodetox/blob/main/example/spectra/2strains_histogram.png) | ![alt text](https://github.com/biointec/haplodetox/blob/main/example/spectra/2strains_modelfit.png) |
+|3 strains| ![alt text](https://github.com/biointec/haplodetox/blob/main/example/spectra/3strains_spectrum.png) | ![alt text](https://github.com/biointec/haplodetox/blob/main/example/spectra/3strains_modelfit.png) |
 
 ## Prerequisites
 To build HaploDetox you need the following software or library packages:
