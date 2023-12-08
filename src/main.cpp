@@ -1237,9 +1237,9 @@ void stageFourPhasedGraphs(Settings& settings)
         std::map<NodeRep, std::vector<int>> nodeMult;
         std::map<EdgeRep, std::vector<int>> edgeMult;
 
-        while (nodeIFS) {
-                NodeID nodeID; int m; vector<int> strainM; double temp;
-                nodeIFS >> nodeID;
+	NodeID nodeID;
+        while (nodeIFS >> nodeID) {
+                int m; vector<int> strainM; double temp;
                 for (int i=0; i < nStrains; i++){
                         nodeIFS >> m;
                         strainM.push_back(m);
@@ -1252,12 +1252,13 @@ void stageFourPhasedGraphs(Settings& settings)
                 nodeMult[NodeRep(nodeID)] = strainM;
         }
 
-        while (edgeIFS) {
-                NodeID srcID, dstID;
+	NodeID srcID;
+        while (edgeIFS >> srcID) {
+                NodeID dstID;
                 int m;
                 vector<int> strainM;
                 double temp;
-                edgeIFS >> srcID >> dstID;
+                edgeIFS >> dstID;
                 for (int i = 0; i < nStrains; i++) {
                         edgeIFS >> m;
                         strainM.push_back(m);
